@@ -1,0 +1,831 @@
+EESchema Schematic File Version 4
+LIBS:mxnatee-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keebio:ProMicro U1
+U 1 1 6018D389
+P 2750 2750
+F 0 "U1" H 2750 3587 60  0000 C CNN
+F 1 "ProMicro" H 2750 3481 60  0000 C CNN
+F 2 "Keybage_Hardware:ArduinoProMicro-Reversible" V 3800 250 60  0001 C CNN
+F 3 "" V 3800 250 60  0001 C CNN
+	1    2750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6018E1F2
+P 3700 2300
+F 0 "#PWR02" H 3700 2050 50  0001 C CNN
+F 1 "GND" V 3705 2172 50  0000 R CNN
+F 2 "" H 3700 2300 50  0001 C CNN
+F 3 "" H 3700 2300 50  0001 C CNN
+	1    3700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 6018E5AE
+P 3700 2500
+F 0 "#PWR04" H 3700 2350 50  0001 C CNN
+F 1 "VCC" V 3715 2628 50  0000 L CNN
+F 2 "" H 3700 2500 50  0001 C CNN
+F 3 "" H 3700 2500 50  0001 C CNN
+	1    3700 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2300 3700 2300
+Wire Wire Line
+	3450 2500 3700 2500
+$Comp
+L power:GND #PWR03
+U 1 1 6018F0FC
+P 1850 2500
+F 0 "#PWR03" H 1850 2250 50  0001 C CNN
+F 1 "GND" V 1855 2372 50  0000 R CNN
+F 2 "" H 1850 2500 50  0001 C CNN
+F 3 "" H 1850 2500 50  0001 C CNN
+	1    1850 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 2500 2000 2500
+Wire Wire Line
+	2050 2400 2000 2400
+Wire Wire Line
+	2000 2400 2000 2500
+Connection ~ 2000 2500
+Wire Wire Line
+	2000 2500 1850 2500
+Text GLabel 5700 1650 1    50   Input ~ 0
+COL0
+Text GLabel 6100 1650 1    50   Input ~ 0
+COL1
+Text GLabel 6550 1650 1    50   Input ~ 0
+COL2
+Text GLabel 7000 1650 1    50   Input ~ 0
+COL3
+Text GLabel 7500 1650 1    50   Input ~ 0
+COL4
+Text GLabel 5200 2300 0    50   Input ~ 0
+ROW0
+$Comp
+L keebio:TRRS U2
+U 1 1 601F2EB1
+P 1400 4750
+F 0 "U2" H 1317 4563 60  0000 C CNN
+F 1 "TRRS" H 1317 4669 60  0000 C CNN
+F 2 "Connector_Audio:MJ-4PP-9" H 1550 4750 60  0001 C CNN
+F 3 "" H 1550 4750 60  0001 C CNN
+	1    1400 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 601F43A2
+P 1950 5150
+F 0 "#PWR09" H 1950 5000 50  0001 C CNN
+F 1 "VCC" V 1965 5278 50  0000 L CNN
+F 2 "" H 1950 5150 50  0001 C CNN
+F 3 "" H 1950 5150 50  0001 C CNN
+	1    1950 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 601F509C
+P 1950 4850
+F 0 "#PWR08" H 1950 4600 50  0001 C CNN
+F 1 "GND" V 1955 4722 50  0000 R CNN
+F 2 "" H 1950 4850 50  0001 C CNN
+F 3 "" H 1950 4850 50  0001 C CNN
+	1    1950 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 4850 1950 4850
+Wire Wire Line
+	1750 5150 1950 5150
+Text GLabel 1950 5050 2    50   Input ~ 0
+DATA1
+Text GLabel 1950 4950 2    50   Input ~ 0
+DATA2
+Wire Wire Line
+	1750 4950 1950 4950
+Wire Wire Line
+	1750 5050 1950 5050
+Text GLabel 1950 2700 0    50   Input ~ 0
+DATA1
+Text GLabel 1950 2600 0    50   Input ~ 0
+DATA2
+Wire Wire Line
+	2050 2600 1950 2600
+Wire Wire Line
+	1950 2700 2050 2700
+Text GLabel 3750 2400 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	3450 2400 3750 2400
+Text GLabel 3200 3900 0    50   Input ~ 0
+RESET
+$Comp
+L Device:D_Small D21
+U 1 1 6022BA35
+P 3450 3900
+F 0 "D21" H 3450 3693 50  0000 C CNN
+F 1 "D_Small" H 3450 3784 50  0000 C CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 3450 3900 50  0001 C CNN
+F 3 "~" V 3450 3900 50  0001 C CNN
+	1    3450 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 6022C7D7
+P 3700 3900
+F 0 "#PWR06" H 3700 3650 50  0001 C CNN
+F 1 "GND" H 3705 3727 50  0000 C CNN
+F 2 "" H 3700 3900 50  0001 C CNN
+F 3 "" H 3700 3900 50  0001 C CNN
+	1    3700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3900 3350 3900
+Wire Wire Line
+	3550 3900 3700 3900
+$Comp
+L keebio:Hole H3
+U 1 1 602316A3
+P 3350 5550
+F 0 "H3" H 3536 5603 60  0000 L CNN
+F 1 "Hole" H 3536 5497 60  0000 L CNN
+F 2 "Keybage_MountingHoles:MountingHole_2.2mmx4.2mm_M2_Pad" H 3350 5550 60  0001 C CNN
+F 3 "" H 3350 5550 60  0001 C CNN
+	1    3350 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:Hole H4
+U 1 1 60231A18
+P 3950 5550
+F 0 "H4" H 4136 5603 60  0000 L CNN
+F 1 "Hole" H 4136 5497 60  0000 L CNN
+F 2 "Keybage_MountingHoles:MountingHole_2.2mmx4.2mm_M2_Pad" H 3950 5550 60  0001 C CNN
+F 3 "" H 3950 5550 60  0001 C CNN
+	1    3950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:Hole H1
+U 1 1 60231EC4
+P 2100 5550
+F 0 "H1" H 2286 5603 60  0000 L CNN
+F 1 "Hole" H 2286 5497 60  0000 L CNN
+F 2 "Keybage_MountingHoles:MountingHole_2.2mmx4.2mm_M2_Pad" H 2100 5550 60  0001 C CNN
+F 3 "" H 2100 5550 60  0001 C CNN
+	1    2100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:Hole H2
+U 1 1 602320EA
+P 2750 5550
+F 0 "H2" H 2936 5603 60  0000 L CNN
+F 1 "Hole" H 2936 5497 60  0000 L CNN
+F 2 "Keybage_MountingHoles:MountingHole_2.2mmx4.2mm_M2_Pad" H 2750 5550 60  0001 C CNN
+F 3 "" H 2750 5550 60  0001 C CNN
+	1    2750 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 3950 0    50   Input ~ 0
+ROW3
+Text GLabel 5200 3400 0    50   Input ~ 0
+ROW2
+Text GLabel 5200 2850 0    50   Input ~ 0
+ROW1
+Text GLabel 3600 3000 2    50   Input ~ 0
+COL3
+Wire Wire Line
+	1950 2900 2050 2900
+Text GLabel 1950 2900 0    50   Input ~ 0
+COL2
+Wire Wire Line
+	2050 2800 1950 2800
+Text GLabel 1950 3100 0    50   Input ~ 0
+ROW3
+Text GLabel 3600 2800 2    50   Input ~ 0
+COL4
+Text GLabel 3600 2700 2    50   Input ~ 0
+ROW1
+Text GLabel 1950 3000 0    50   Input ~ 0
+ROW2
+Wire Wire Line
+	2050 3200 1950 3200
+Wire Wire Line
+	2050 3100 1950 3100
+Wire Wire Line
+	2050 3000 1950 3000
+Text GLabel 1950 3200 0    50   Input ~ 0
+COL0
+Text GLabel 3600 2900 2    50   Input ~ 0
+COL1
+Text GLabel 3600 2600 2    50   Input ~ 0
+ROW0
+Wire Wire Line
+	3450 2600 3600 2600
+Wire Wire Line
+	3450 2700 3600 2700
+Wire Wire Line
+	3450 2800 3600 2800
+NoConn ~ 3450 2200
+NoConn ~ 2050 2200
+NoConn ~ 2050 2300
+NoConn ~ 3450 3200
+NoConn ~ 3450 3300
+$Comp
+L keybage:MX-NoLED MX1
+U 1 1 6023DA2E
+P 6400 1950
+F 0 "MX1" H 6433 2173 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 2099 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5775 1925 60  0001 C CNN
+F 3 "" H 5775 1925 60  0001 C CNN
+	1    6400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2100 6250 2100
+$Comp
+L Device:D_Small D1
+U 1 1 6023DA35
+P 6250 2200
+F 0 "D1" V 6204 2270 50  0000 L CNN
+F 1 "D_Small" V 6295 2270 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 2200 50  0001 C CNN
+F 3 "~" V 6250 2200 50  0001 C CNN
+	1    6250 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX2
+U 1 1 6023EA95
+P 6850 1950
+F 0 "MX2" H 6883 2173 60  0000 C CNN
+F 1 "MX-NoLED" H 6883 2099 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6225 1925 60  0001 C CNN
+F 3 "" H 6225 1925 60  0001 C CNN
+	1    6850 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2100 6700 2100
+$Comp
+L Device:D_Small D2
+U 1 1 6023EA9C
+P 6700 2200
+F 0 "D2" V 6654 2270 50  0000 L CNN
+F 1 "D_Small" V 6745 2270 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6700 2200 50  0001 C CNN
+F 3 "~" V 6700 2200 50  0001 C CNN
+	1    6700 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX3
+U 1 1 6024180E
+P 5950 2500
+F 0 "MX3" H 5983 2723 60  0000 C CNN
+F 1 "MX-NoLED" H 5983 2649 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5325 2475 60  0001 C CNN
+F 3 "" H 5325 2475 60  0001 C CNN
+	1    5950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2650 5800 2650
+$Comp
+L Device:D_Small D3
+U 1 1 60241815
+P 5800 2750
+F 0 "D3" V 5754 2820 50  0000 L CNN
+F 1 "D_Small" V 5845 2820 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5800 2750 50  0001 C CNN
+F 3 "~" V 5800 2750 50  0001 C CNN
+	1    5800 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2850 5800 2850
+Wire Wire Line
+	5200 2300 6250 2300
+Connection ~ 6250 2300
+Wire Wire Line
+	6250 2300 6700 2300
+Wire Wire Line
+	6550 1650 6550 1900
+Wire Wire Line
+	7000 1650 7000 1900
+$Comp
+L keybage:MX-NoLED MX4
+U 1 1 602477C7
+P 6400 2500
+F 0 "MX4" H 6433 2723 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 2649 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5775 2475 60  0001 C CNN
+F 3 "" H 5775 2475 60  0001 C CNN
+	1    6400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2650 6250 2650
+$Comp
+L Device:D_Small D4
+U 1 1 602477CE
+P 6250 2750
+F 0 "D4" V 6204 2820 50  0000 L CNN
+F 1 "D_Small" V 6295 2820 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 2750 50  0001 C CNN
+F 3 "~" V 6250 2750 50  0001 C CNN
+	1    6250 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX5
+U 1 1 60248C54
+P 6850 2500
+F 0 "MX5" H 6883 2723 60  0000 C CNN
+F 1 "MX-NoLED" H 6883 2649 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6225 2475 60  0001 C CNN
+F 3 "" H 6225 2475 60  0001 C CNN
+	1    6850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2650 6700 2650
+$Comp
+L Device:D_Small D5
+U 1 1 60248C5B
+P 6700 2750
+F 0 "D5" V 6654 2820 50  0000 L CNN
+F 1 "D_Small" V 6745 2820 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6700 2750 50  0001 C CNN
+F 3 "~" V 6700 2750 50  0001 C CNN
+	1    6700 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX6
+U 1 1 6024A250
+P 7350 2500
+F 0 "MX6" H 7383 2723 60  0000 C CNN
+F 1 "MX-NoLED" H 7383 2649 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6725 2475 60  0001 C CNN
+F 3 "" H 6725 2475 60  0001 C CNN
+	1    7350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2650 7200 2650
+$Comp
+L Device:D_Small D6
+U 1 1 6024A257
+P 7200 2750
+F 0 "D6" V 7154 2820 50  0000 L CNN
+F 1 "D_Small" V 7245 2820 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7200 2750 50  0001 C CNN
+F 3 "~" V 7200 2750 50  0001 C CNN
+	1    7200 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX7
+U 1 1 6025A254
+P 5950 3050
+F 0 "MX7" H 5983 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 5983 3199 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5325 3025 60  0001 C CNN
+F 3 "" H 5325 3025 60  0001 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3200 5800 3200
+$Comp
+L Device:D_Small D7
+U 1 1 6025A25B
+P 5800 3300
+F 0 "D7" V 5754 3370 50  0000 L CNN
+F 1 "D_Small" V 5845 3370 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5800 3300 50  0001 C CNN
+F 3 "~" V 5800 3300 50  0001 C CNN
+	1    5800 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX8
+U 1 1 6025BD7E
+P 6400 3050
+F 0 "MX8" H 6433 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 3199 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5775 3025 60  0001 C CNN
+F 3 "" H 5775 3025 60  0001 C CNN
+	1    6400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3200 6250 3200
+$Comp
+L Device:D_Small D8
+U 1 1 6025BD85
+P 6250 3300
+F 0 "D8" V 6204 3370 50  0000 L CNN
+F 1 "D_Small" V 6295 3370 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 3300 50  0001 C CNN
+F 3 "~" V 6250 3300 50  0001 C CNN
+	1    6250 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX9
+U 1 1 6025DBD4
+P 6850 3050
+F 0 "MX9" H 6883 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 6883 3199 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6225 3025 60  0001 C CNN
+F 3 "" H 6225 3025 60  0001 C CNN
+	1    6850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3200 6700 3200
+$Comp
+L Device:D_Small D9
+U 1 1 6025DBDB
+P 6700 3300
+F 0 "D9" V 6654 3370 50  0000 L CNN
+F 1 "D_Small" V 6745 3370 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6700 3300 50  0001 C CNN
+F 3 "~" V 6700 3300 50  0001 C CNN
+	1    6700 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX10
+U 1 1 6025FB32
+P 7350 3050
+F 0 "MX10" H 7383 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 7383 3199 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6725 3025 60  0001 C CNN
+F 3 "" H 6725 3025 60  0001 C CNN
+	1    7350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3200 7200 3200
+$Comp
+L Device:D_Small D10
+U 1 1 6025FB39
+P 7200 3300
+F 0 "D10" V 7154 3370 50  0000 L CNN
+F 1 "D_Small" V 7245 3370 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7200 3300 50  0001 C CNN
+F 3 "~" V 7200 3300 50  0001 C CNN
+	1    7200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX11
+U 1 1 60261E43
+P 5550 3600
+F 0 "MX11" H 5583 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 5583 3749 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 4925 3575 60  0001 C CNN
+F 3 "" H 4925 3575 60  0001 C CNN
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3750 5400 3750
+$Comp
+L Device:D_Small D11
+U 1 1 60261E4A
+P 5400 3850
+F 0 "D11" V 5354 3920 50  0000 L CNN
+F 1 "D_Small" V 5445 3920 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5400 3850 50  0001 C CNN
+F 3 "~" V 5400 3850 50  0001 C CNN
+	1    5400 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX12
+U 1 1 6026A0FA
+P 6400 3600
+F 0 "MX12" H 6433 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 3749 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5775 3575 60  0001 C CNN
+F 3 "" H 5775 3575 60  0001 C CNN
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3750 6250 3750
+$Comp
+L Device:D_Small D12
+U 1 1 6026A101
+P 6250 3850
+F 0 "D12" V 6204 3920 50  0000 L CNN
+F 1 "D_Small" V 6295 3920 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 3850 50  0001 C CNN
+F 3 "~" V 6250 3850 50  0001 C CNN
+	1    6250 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX13
+U 1 1 6026BDFD
+P 6850 3600
+F 0 "MX13" H 6883 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 6883 3749 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6225 3575 60  0001 C CNN
+F 3 "" H 6225 3575 60  0001 C CNN
+	1    6850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3750 6700 3750
+$Comp
+L Device:D_Small D13
+U 1 1 6026BE04
+P 6700 3850
+F 0 "D13" V 6654 3920 50  0000 L CNN
+F 1 "D_Small" V 6745 3920 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6700 3850 50  0001 C CNN
+F 3 "~" V 6700 3850 50  0001 C CNN
+	1    6700 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX14
+U 1 1 6026DBB5
+P 7350 3600
+F 0 "MX14" H 7383 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 7383 3749 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6725 3575 60  0001 C CNN
+F 3 "" H 6725 3575 60  0001 C CNN
+	1    7350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3750 7200 3750
+$Comp
+L Device:D_Small D14
+U 1 1 6026DBBC
+P 7200 3850
+F 0 "D14" V 7154 3920 50  0000 L CNN
+F 1 "D_Small" V 7245 3920 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7200 3850 50  0001 C CNN
+F 3 "~" V 7200 3850 50  0001 C CNN
+	1    7200 3850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5200 4450 0    50   Input ~ 0
+ROW4
+$Comp
+L keybage:MX-NoLED MX15
+U 1 1 6027434C
+P 5550 4100
+F 0 "MX15" H 5583 4323 60  0000 C CNN
+F 1 "MX-NoLED" H 5583 4249 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 4925 4075 60  0001 C CNN
+F 3 "" H 4925 4075 60  0001 C CNN
+	1    5550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4250 5400 4250
+$Comp
+L Device:D_Small D15
+U 1 1 60274353
+P 5400 4350
+F 0 "D15" V 5354 4420 50  0000 L CNN
+F 1 "D_Small" V 5445 4420 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5400 4350 50  0001 C CNN
+F 3 "~" V 5400 4350 50  0001 C CNN
+	1    5400 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3400 5800 3400
+Connection ~ 6250 3400
+Wire Wire Line
+	6250 3400 6700 3400
+Connection ~ 6700 3400
+Wire Wire Line
+	6700 3400 7200 3400
+Wire Wire Line
+	5800 2850 6250 2850
+Connection ~ 5800 2850
+Connection ~ 6250 2850
+Wire Wire Line
+	6250 2850 6700 2850
+Connection ~ 6700 2850
+Wire Wire Line
+	6700 2850 7200 2850
+Wire Wire Line
+	5700 3550 5700 1650
+$Comp
+L keybage:MX-NoLED MX16
+U 1 1 602958F6
+P 5950 4100
+F 0 "MX16" H 5983 4323 60  0000 C CNN
+F 1 "MX-NoLED" H 5983 4249 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5325 4075 60  0001 C CNN
+F 3 "" H 5325 4075 60  0001 C CNN
+	1    5950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4250 5800 4250
+$Comp
+L Device:D_Small D16
+U 1 1 602958FD
+P 5800 4350
+F 0 "D16" V 5754 4420 50  0000 L CNN
+F 1 "D_Small" V 5845 4420 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5800 4350 50  0001 C CNN
+F 3 "~" V 5800 4350 50  0001 C CNN
+	1    5800 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX17
+U 1 1 602986CA
+P 6400 4100
+F 0 "MX17" H 6433 4323 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 4249 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 5775 4075 60  0001 C CNN
+F 3 "" H 5775 4075 60  0001 C CNN
+	1    6400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4250 6250 4250
+$Comp
+L Device:D_Small D17
+U 1 1 602986D1
+P 6250 4350
+F 0 "D17" V 6204 4420 50  0000 L CNN
+F 1 "D_Small" V 6295 4420 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 4350 50  0001 C CNN
+F 3 "~" V 6250 4350 50  0001 C CNN
+	1    6250 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX18
+U 1 1 6029AC78
+P 6850 4100
+F 0 "MX18" H 6883 4323 60  0000 C CNN
+F 1 "MX-NoLED" H 6883 4249 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6225 4075 60  0001 C CNN
+F 3 "" H 6225 4075 60  0001 C CNN
+	1    6850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4250 6700 4250
+$Comp
+L Device:D_Small D18
+U 1 1 6029AC7F
+P 6700 4350
+F 0 "D18" V 6654 4420 50  0000 L CNN
+F 1 "D_Small" V 6745 4420 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6700 4350 50  0001 C CNN
+F 3 "~" V 6700 4350 50  0001 C CNN
+	1    6700 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keybage:MX-NoLED MX19
+U 1 1 6029D65F
+P 7350 4100
+F 0 "MX19" H 7383 4323 60  0000 C CNN
+F 1 "MX-NoLED" H 7383 4249 20  0000 C CNN
+F 2 "Keybage_MX:MX-NoLED-Reversible" H 6725 4075 60  0001 C CNN
+F 3 "" H 6725 4075 60  0001 C CNN
+	1    7350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4250 7200 4250
+$Comp
+L Device:D_Small D19
+U 1 1 6029D666
+P 7200 4350
+F 0 "D19" V 7154 4420 50  0000 L CNN
+F 1 "D_Small" V 7245 4420 50  0000 L CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7200 4350 50  0001 C CNN
+F 3 "~" V 7200 4350 50  0001 C CNN
+	1    7200 4350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6250 4450
+Wire Wire Line
+	6250 4450 6700 4450
+Connection ~ 6700 4450
+Wire Wire Line
+	6700 4450 7200 4450
+Connection ~ 5800 3400
+Wire Wire Line
+	5800 3400 6250 3400
+Wire Wire Line
+	6100 1650 6100 2450
+Connection ~ 6100 2450
+Wire Wire Line
+	6100 2450 6100 3000
+Wire Wire Line
+	5800 4450 6250 4450
+Wire Wire Line
+	6100 3000 6100 4050
+Connection ~ 6100 3000
+Wire Wire Line
+	5700 3550 5700 4050
+Connection ~ 5700 3550
+Wire Wire Line
+	6550 4050 6550 3550
+Connection ~ 6550 1900
+Connection ~ 6550 2450
+Wire Wire Line
+	6550 2450 6550 1900
+Connection ~ 6550 3000
+Wire Wire Line
+	6550 3000 6550 2450
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 3550 6550 3000
+Wire Wire Line
+	7000 4050 7000 3550
+Connection ~ 7000 1900
+Connection ~ 7000 2450
+Wire Wire Line
+	7000 2450 7000 1900
+Connection ~ 7000 3000
+Wire Wire Line
+	7000 3000 7000 2450
+Connection ~ 7000 3550
+Wire Wire Line
+	7000 3550 7000 3000
+Connection ~ 7500 3000
+Wire Wire Line
+	7500 3000 7500 2450
+Connection ~ 7500 3550
+Wire Wire Line
+	7500 3550 7500 3000
+Wire Wire Line
+	7500 2450 7500 1650
+Connection ~ 7500 2450
+Wire Wire Line
+	7500 3550 7500 4050
+Wire Wire Line
+	5200 3950 5400 3950
+Connection ~ 5400 3950
+Wire Wire Line
+	5400 3950 6250 3950
+Connection ~ 6250 3950
+Wire Wire Line
+	6250 3950 6700 3950
+Connection ~ 6700 3950
+Wire Wire Line
+	6700 3950 7200 3950
+Wire Wire Line
+	5200 4450 5400 4450
+Connection ~ 5800 4450
+Connection ~ 5400 4450
+Wire Wire Line
+	5400 4450 5800 4450
+Wire Wire Line
+	3450 2900 3600 2900
+Wire Wire Line
+	3450 3000 3600 3000
+Text GLabel 3600 3100 2    50   Input ~ 0
+ROW4
+Wire Wire Line
+	3450 3100 3600 3100
+NoConn ~ 2050 3300
+$EndSCHEMATC
