@@ -87,7 +87,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "gerbers/"))
+      (outputdirectory "switch_plate_gerbers/"))
   )
 
   (net 0 "")
@@ -1012,20 +1012,20 @@
   (gr_curve (pts (xy 129.123805 40.277555) (xy 129.927818 41.098638) (xy 130.731341 41.957663) (xy 131.530099 42.854227)) (layer Edge.Cuts) (width 0.05))
   (gr_curve (pts (xy 126.737204 38.004673) (xy 127.53032 38.749643) (xy 127.53032 38.749643) (xy 128.323437 39.494612)) (layer Edge.Cuts) (width 0.05))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 602296C6) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 6020B75F) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
-    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 8.6995 11.3665) (xy 159.3215 12.0015) (xy 155.5115 153.7335) (xy 7.9375 145.9865)
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 602296C3) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 6020B75C) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
-    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 8.6995 11.3665) (xy 159.3215 12.0015) (xy 155.5115 153.7335) (xy 7.9375 145.9865)
